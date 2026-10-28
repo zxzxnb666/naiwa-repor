@@ -28,7 +28,8 @@ shopt -u nullglob
 
 # Running from the root keeps each Filename relative: debs/<file>.deb.
 if ((${#packages[@]} > 0)); then
-  apt-ftparchive packages debs > "$work_dir/Packages"
+  # Localize the source category without rewriting published packages.
+  apt-ftparchive packages debs | sed 's/^Section: Tweaks$/Section: 插件/' > "$work_dir/Packages"
 else
   : > "$work_dir/Packages"
 fi
