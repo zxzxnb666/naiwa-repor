@@ -1,6 +1,6 @@
-# zxzxnb666/naiwa-repor
+# 奶蛙爱好者源
 
-An APT source for jailbroken iOS, published with Apelin.
+通过 Apelin 发布的越狱软件源，GitHub 仓库为 zxzxnb666/naiwa-repor。
 
 Add `https://zxzxnb666.github.io/naiwa-repor/` in Irisin.
 
